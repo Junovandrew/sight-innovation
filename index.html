@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGHT-INNOVATION LLC-Advance Electronics & Software Company in Nigeria</title>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+     <header classList="active?'active':''" class="header active?'active':''">
+        <div class="header-div-1">
+            <img class="logo" src="./images/favicon.png"/>
+            <span class="sight">SIGHT-INNOVATION</span>
+        </div>
+        
+        <div class="header-div-2">
+            <div class="div-2-div">
+                <div>
+                    <span class="header-span">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z"></path></svg>
+                        Home
+                    </span>
+                </div>
+
+                <div class="ensmde">
+                    <div>
+                        <span class="header-span" onclick="showDialog(this,0)">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0H24V24H0z"></path><path d="M19.562 12.097l1.531 2.653c.967 1.674.393 3.815-1.28 4.781-.533.307-1.136.469-1.75.469H16v2.5L11 19l5-3.5V18h2.062c.263 0 .522-.07.75-.201.718-.414.963-1.332.55-2.049l-1.532-2.653 1.732-1zM7.304 9.134l.53 6.08-2.164-1.25-1.031 1.786c-.132.228-.201.487-.201.75 0 .828.671 1.5 1.5 1.5H9v2H5.938c-1.933 0-3.5-1.567-3.5-3.5 0-.614.162-1.218.469-1.75l1.03-1.787-2.164-1.249 5.53-2.58zm6.446-6.165c.532.307.974.749 1.281 1.281l1.03 1.785 2.166-1.25-.53 6.081-5.532-2.58 2.165-1.25-1.031-1.786c-.132-.228-.321-.417-.549-.549-.717-.414-1.635-.168-2.049.549L9.169 7.903l-1.732-1L8.97 4.25c.966-1.674 3.107-2.248 4.781-1.281z"></path></g></svg>
+                            Energy
+
+                            <dialog class="energy" >
+                                <a onclick="showDialog(this,1)" href="http://127.0.0.1:5500/smart-meter.html">Smart Meter</a>
+                            </dialog>
+                        </span>
+                    </div>
+
+                    
+
+                    <div>
+                        <span class="header-span">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24m16 96h64m-80-48h96m-48-48V256"></path><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M294 240s-21.51 16-38 16-38-16-38-16"></path></svg>
+                            Smart Devices
+                        </span>
+                    </div>             
+                </div>
+            </div>
+
+            <div class="div-end-div">
+                <span class="header-span">
+                <a>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 3H7c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h6c1.103 0 2-.897 2-2h8c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM9.997 19H4V9h6l-.003 10zm10-2H12V9c0-1.103-.897-2-2-2H7V5h13l-.003 12z"></path></svg>
+                    My Devices
+                </a>
+                </span>
+
+                <span class="header-span">
+                    <a>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path><path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"></path></svg>
+                        Sign-in
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="home">
+        <div class="home-banner">
+            <section class="home-section-1">
+                <span class="home-corner"></span>
+                <span class="main-text">Design and Build Electronics and Softwares for personal and business use</span>
+            </section>
+            <section class="home-section-1">
+                <img class="banner" src="./images/banner.png" alt="banner">
+
+                <div class="home-div1">
+                    <img src="./images/chat.png" class="home-img"/>
+                    <div>
+                        <img src="./images/whatapp2.png" class="home-img1"/>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <section class="home-servicesSection">
+        <div class="home-services1">
+            <span class="home-sertt1">Our Services</span>
+            <span class="home-sertt2">We stand for increased financial productivity for you and your company</span>
+        </div>
+
+        <div class="home-services2">
+            <div>
+                <img class="home-img2" src="./images/services1.png"/>
+                <div class="home-services2-div1">
+                    <span class="home-services2-span1">
+                        SEO, Website and Software Development
+                    </span>
+                    <span class="home-services2-span2">
+                        We create responsive websites for your business growth, productivity and also deliver off-page SEO
+                    </span>
+                </div>               
+            </div>
+            <div>
+                <img class="home-img2" src="./images/phone.png"/>
+                <div class="home-services2-div2">
+                    <span class="home-services2-span1">
+                        Graphics Design and Mobile Application
+                    </span>
+                    <span class="home-services2-spandif">
+                        We design cool intuitive graphics, develop stunning mobile application of all kind (hybrid & native applications), android and IOS
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img class="home-img2" src="./images/services2.png"/>
+                <div class="home-services2-div3">
+                    <span class="home-services2-span1">
+                        IT Consultant, Support and Management
+                    </span>
+                    <span class="home-services2-span2">
+                        We provide powerful technological information, advice that made business success possible and deliver good IT support and maintenance industrial standard
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-bg">
+        <div>
+            <div>
+                <img src="./images/head.png" alt="head"/>
+                <span class="home-bg-span">14</span>
+                <span>Clients</span>
+            </div>
+
+            <div >
+                <img src="./images/file.png" alt="file"/>
+                <span class="home-bg-span">32</span>
+                <span>Projects</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-products">
+        <img src="./images/side.png" alt="side">
+        <span>Our Products</span>
+        <div>
+            <div class="home-prodiv">
+                <div class="home-prodiv1">
+                    <div>
+                        <span>SMAC</span>
+                        <span>
+                            Live and work smarter, safer and more efficiently with SMAC. It is a safe devices for everyone
+                        </span>
+                        <a>View Features</a>
+                    </div>
+                    <img height="280px" width="280px" src="./images/smac.png" alt="smac">
+                </div>
+
+                <div class="home-prodiv2">
+                    <div>
+                        <span>SMART-SWITCH</span>
+                        <span>
+                            Control and know the status of your devices, machines, appliances Anytime, Anyday and from Anywhere
+                        </span>
+                        <a>View Features</a>
+                    </div>
+                    <img height="280px" width="280px" src="./images/switch.png" alt="switch">
+                </div>
+            </div>
+
+            <div class="home-prodiv3">
+                <img height="280px" width="280px" src="./images/devfi.png" alt="devfi">
+                <div>
+                    <span>DEVFI</span>
+                    <span>
+                        DEVFI is a communication node through which users can communicate with their smart devices via the internet, bluetooth, wifi and through sms
+                    </span>
+                    <a>View Features</a>
+                </div>
+            </div>
+        </div>
+        <p class="home-p1"></p>
+        <p class="home-p2"></p>
+    </section>
+
+    <section class="home-software">
+        <div class="home-softdiv1">
+            <span class="home-softdiv1-span1">WHAT WE DO</span>
+            <span class="home-softdiv1-span2">
+                Learn to build softwares, design and construct electronic devices with our structured learning process
+            </span>
+            <span class="home-softdiv1-span3">Earn certification in modern software technologies</span>
+        </div>
+
+        <div class="home-softdiv2">
+           <div>
+                <div class="scrolled-7">
+                    <span>DESIGN</span>
+                    <div class="home-sfdiv1">
+                        <span>
+                            <img src="./images/figma.png" alt="figma" class="home-img3">
+                            figma
+                        </span>
+                        <span>
+                            <img src="./images/photoshop.png" alt="photoshop" class="home-img3">
+                            Photoshop
+                        </span>
+                        <span>
+                            <img src="./images/corel.png" alt="Coreldraw" class="home-img3">
+                            Coreldraw
+                        </span>
+                        <span>
+                            <img src="./images/blender.png" alt="blender" class="home-img3">
+                            Blender
+                        </span>
+                        <span>
+                            <img src="./images/illustrator.png" alt="Illustrator" class="home-img3">
+                            Illustrator
+                        </span>
+                    </div>
+                </div>
+
+                <div class="scrolled-7">
+                    <span>PROGRAMMING</span>
+                    <div class="home-sfdiv2">
+                        <div class="home-sfdiv3">
+                            <span>
+                                <img src="./images/java.png" alt="Java" class="home-img3">
+                                Java
+                            </span>
+                            <span>
+                                <img src="./images/c.png" alt="C#" class="home-img3">
+                                C#
+                            </span>
+                            <span>
+                                <img src="./images/net.png" alt=".net" class="home-img3">
+                                .Net
+                            </span>
+                            <span>
+                                <img src="./images/php.png" alt="php" class="home-img3">
+                                Php
+                            </span>
+                            <span>
+                                <img src="./images/javascript.png" alt="javascript" class="home-img3">
+                                Javasccript
+                            </span>
+                        </div>
+                        
+                        <div class="home-sfdiv3">
+                            <span>
+                                <img src="./images/node.png" alt="node.js" class="home-img3">
+                                Node.js
+                            </span>
+                            <span>
+                                <img src="./images/react.png" alt="react" class="home-img3">
+                                React
+                            </span>
+                            <span>
+                                <img src="./images/swift.png" alt="swift" class="home-img3">
+                                Swift
+                            </span>
+                            <span>
+                                <img src="./images/python.png" alt="python" class="home-img3">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scrolled-7">
+                    <span>CLOUD</span>
+                    <div class="home-sfdiv3">
+                        <span>
+                            <img src="./images/aws.png" alt="aws" class="home-img3">
+                            Aws
+                        </span>
+                        <span>
+                            <img src="./images/azure.png" alt="Microsoft Azure" class="home-img3">
+                            Microsoft Azure
+                        </span>
+                        <span>
+                            <img height="30" width="30" src="./images/google.png" alt="Google Cloud" class="home-img3">
+                            Google Cloud
+                        </span>
+                    </div>
+                </div>
+           </div>
+
+           <div>
+                <div class="scrolled-7">
+                    <span>DATABASE</span>
+                    <div class="home-sfdiv1">
+                        <span>
+                            <img src="./images/sql.png" alt="sql" class="home-img3">
+                            Sql
+                        </span>
+                        <span>
+                            <img src="./images/nosql.png" alt="nosql" class="home-img3">
+                            Nosql
+                        </span>
+                        <span>
+                            <img src="./images/mongodb.png" alt="mongodb" class="home-img3">
+                            MongoDb
+                        </span>
+                        <span>
+                            <img src="./images/entity.png" alt="entity framework" class="home-img3">
+                            Entity Framework
+                        </span>
+                    </div>
+                </div>
+
+                <div class="scrolled-7">
+                    <span>BLOCKCHAIN</span>
+                        <div class="home-sfdiv3">
+                            <span>
+                                <img src="./images/ethereum.png" alt="ethereum" class="home-img3">
+                                Ethereum
+                            </span>
+                            <span>
+                                <img src="./images/binance.png" alt="binance" class="home-img3">
+                                Binance
+                            </span>
+                            <span>
+                                <img src="./images/reach.png" alt="reach" class="home-img3">
+                                Reach
+                            </span>
+                            <span>
+                                <img src="./images/solidity.png" alt="solidity" class="home-img3">
+                                Solidity
+                            </span>
+                        </div>                    
+                </div>
+
+                <div class="scrolled-7">
+                    <span>MOBILE</span>
+                    <div class="home-sfdiv3">
+                        <span>
+                            <img src="./images/flutter.png" alt="flutter" class="home-img3">
+                            Flutter
+                        </span>
+                        <span>
+                            <img src="./images/react.png" alt="react" class="home-img3">
+                            React Native
+                        </span>
+                        <span>
+                            <img height="30" width="30" src="./images/kotlin.png" alt="kotlin" class="home-img3">
+                            Kotlin
+                        </span>
+                        <span>
+                            <img src="./images/swift.png" alt="swift" class="home-img3">
+                            Swift
+                        </span>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <img class="footer-img" src="./images/footer.png" alt="footer">
+        <div class="footer-div1">
+            <span>Build your website and make more money with us</span>
+            <a href="/contact">Contact us</a>
+        </div>
+        
+      <div class="footer-div2">
+            <div class="footer-div3">
+                <span class="footer-sp">SMART DEVICES</span>
+                <a href="/smac">SMAC</a>
+                <a href="/#">DEVFI</a>
+                <a href="smart-switch">S-SWITCH</a>
+            </div>
+
+            <div class="footer-div3">
+                <span class="footer-sp">APPS &amp WEBSITES</span>
+                <a href="/#">S-DevApp</a>
+                <a href="https://sight-eduplus.com/">Sight-EduPlus.Com</a>
+                <a href="/#">TronicsPlace.Com</a>
+            </div>
+
+            <div class="footer-div3">
+                <span class="footer-sp">SUPPORT</span>
+                <span class="footer-sp3">
+                    Contact Us On
+                    <br>
+                    +2349037680669, +2348159033854
+                </span>
+                <span class="footer-sp2">Service Location At:</span>
+                <span class="footer-sp3">
+                    4,Iduzoe Off Uwagboe,
+                    <br>
+                    Ugbowo Benin City
+                </span>
+            </div>
+
+        <div class="footer-div3">
+            <span class="footer-sp">COMPANY</span>
+            <a href="/About us">About Us</a>
+            <a href="/#">News & Blog</a>
+            <a href="/careers">Careers</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/#">Terms and Conditions</a>
+        </div>
+
+        <div class="footer-div4">
+            <img class="footer-img2" src="./images/twitter.jpg" alt="twitter">
+            <img class="footer-img2" src="./images/linkedin.png" alt="linkedin">
+            <img class="footer-img2" src="./images/facebook.png" alt="facebook">
+        </div>
+      </div>
+
+        <span>2022 SIGHT-INNOVATION LLC</span>
+
+    </section>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
