@@ -8,12 +8,11 @@ header{
     align-items: center;   
     color: rgb(11, 51, 86);
     background-color: white;
-    /* color: white;
-    background-color: #428bca; */
     justify-content: space-between;
     flex-direction: row;
     padding: 10px 7%;
     z-index: 50;
+    transition: all 0.3s linear;
 }
 
 header > div{
@@ -45,7 +44,6 @@ header > div{
 }
 
 .div-2-div{
-    gap: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -59,6 +57,50 @@ header > div{
     flex-direction: row;
     gap: 20px;
     font-size: 15px;
+}
+
+.ensmde > div{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-ddcontent{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: #fff;
+    min-width: 150px;
+    max-width: 210px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+    top: 40px;
+    gap: 5px;
+    color: #0b3356;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.ensmde > div > span:hover .header-ddcontent{
+    display: flex !important;
+}
+
+.header-ddcontent > span > a{
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 4px solid #0b3356;
+}
+
+.header-ddcontent > span > a:hover{
+    border-color: #428bca;
+    color: #428bca;
+    background-color: #efe8e8;
 }
 
 .ensmde > *{
@@ -84,11 +126,11 @@ header > div{
     cursor: pointer;
 }
 
-/* .active{
+.active{
     background-color:rgb(66,139,202);
     color:white;
 }
 
-.active > *{
-    color: white;
-} */
+.active .change{
+    color: white !important;
+}

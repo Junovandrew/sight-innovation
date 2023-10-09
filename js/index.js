@@ -2,9 +2,14 @@ let y = 0;
 let active;  
 let nav = document.querySelector('header');
 
-const get_y =()=> window.document.pageYOffset || window.document.scrollTop;
+const get_y =()=> {
+    let tempY = window.document.pageYOffset || document.documentElement.scrollTop;
+    return tempY;
+}
 
 const handleScroll = () =>{
+    y = get_y();
+    console.log(y,'y')
 	if(y < 50){
 	    nav.classList.remove('active');
 	}
@@ -18,16 +23,5 @@ window.onload = ()=>{
   handleScroll();
 }
 
-window.addEventListner('scroll',handleScroll);
+window.addEventListener('scroll',handleScroll);
 
-function showDialog(span,close){
-    let parent = span.parentElement;
-    let dialog = parent.children[1];
-    if(close){
-        dialog = parent.parentElement.children[1];
-        dialog.close();
-        return;
-    }
-
-    dialog.show();
-}
