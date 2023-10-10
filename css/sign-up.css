@@ -1,0 +1,197 @@
+.sign-up-container{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.sign-up-container > div{
+    background-image: url(/images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-up-container > div > div{
+    background-color: rgba(53,120,172,0.4);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.sign-up-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 400px;
+}
+
+.sign-up-div1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.sign-up-img2{
+    height: 40px;
+    width: 40px;
+    box-shadow: -4px -4px 4px 2px rgba(0,0,0,0.25);
+}
+
+.sign-up-div1 > span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sign-up-div2{
+    height: 75%;
+    width: 55%;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 
+    6px 6px 8px 3px rgba(0,0,0,0.25),
+    -6px -6px 8px 3px rgba(0,0,0,0.15);
+    color: #000;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width:1030px){
+        width:70%;
+    }
+}
+
+.sign-up-hd1{
+    font-size: 30px;
+    color: #428bca;
+}
+
+.sign-up-div4{
+    display: flex;
+    gap: 10%;
+    width: 100%;
+}  
+
+.sign-up-div4 > input{
+    width: 50%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #666;
+    outline: none;
+}
+
+.sign-up-div2 > input,
+.sign-up-inp2{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #666;
+    outline: none;
+}
+
+.sign-up-div5{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#sign-up-img3,
+#sign-up-img4{
+    height: 20px;
+    width: 20px;
+    margin-left: -25px;
+    color: #0b3356;
+    cursor: pointer;
+}
+
+.show{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+.sign-up-div3{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-up-div3 > span{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-div3 > span > input{
+    background-color: #fff;
+    color: #428bca;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #0b3356;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-div3 > button{
+    width: 100px;
+    height: 40px;
+    background-color: #428bca;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.sign-up-sp1 > a{
+    color: #428bca;
+}
+
+#accept::before{
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    scale:0;
+    transition: transform .12s ease-in-out;
+    box-shadow: inset 1em 1em #428bca;
+    background-color: #428bca;
+    transform-origin: bottom left;
+    -webkit-clip-path: polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0,43% 62%);
+    clip-path: polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0,43% 62%);
+    
+}
+
+#accept:checked::before{
+    scale:1;
+}
