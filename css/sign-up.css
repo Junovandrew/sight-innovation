@@ -192,6 +192,14 @@
     
 }
 
+button[disabled="true"]{
+    cursor: not-allowed;
+}
+
+button[disabled="false"]{
+    cursor: pointer !important;
+}
+
 #accept:checked::before{
     scale:1;
 }
